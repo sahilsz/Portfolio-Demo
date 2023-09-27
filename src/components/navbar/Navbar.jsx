@@ -1,8 +1,9 @@
+import Sidebar from "../sidebar/Sidebar";
 import "./navbar.css";
 export default function Navbar() {
   return (
     <div className="navbar">
-      {/* sidebar */}
+      <Sidebar />
       <div className="wrapper">
         <span className="logo">Sahil</span>
         <div className="social">
