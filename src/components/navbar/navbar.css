@@ -24,3 +24,14 @@
   width: 18px;
   height: 18px;
 }
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+
+  .wrapper {
+    justify-content: flex-end;
+    padding: 20px;
+  }
+}
