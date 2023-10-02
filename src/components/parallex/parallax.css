@@ -42,3 +42,21 @@
   position: absolute;
   z-index: 1;
 }
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .parallax h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .mountains {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .planets {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
