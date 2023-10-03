@@ -52,3 +52,38 @@ textarea {
   border-radius: 5px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .contact {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact .textContainer {
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .contact .textContainer h1 {
+    font-size: 2rem;
+  }
+
+  .contact .formContainer {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contact .formContainer input {
+    padding: 10px;
+  }
+
+  .contact .formContainer button {
+    padding: 10px;
+  }
+  .contact .formContainer textarea {
+    height: 100px;
+  }
+}
