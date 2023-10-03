@@ -83,3 +83,64 @@
   border: none;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .services .textContainer {
+    align-self: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .services .textContainer hr {
+    width: 300px;
+  }
+
+  .services .titleContainer {
+    width: 100%;
+  }
+
+  .services .titleContainer .title {
+    text-align: center;
+    align-self: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .services .titleContainer h2 {
+    font-size: 2rem;
+  }
+
+  .services .title img {
+    width: 200px;
+    height: 50px;
+  }
+
+  .services .titleContainer button {
+    font-size: 1.2rem;
+    width: 150px;
+    height: 50px;
+  }
+
+  .services .listContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .services .listContainer .box {
+    border: none;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .services .listContainer p {
+    display: none;
+  }
+
+  .services .listContainer .box button {
+    background-color: transparent;
+    border: 1px solid orange;
+    border-radius: 5px;
+    color: orange;
+    width: 50%;
+    padding: 5px;
+  }
+}
