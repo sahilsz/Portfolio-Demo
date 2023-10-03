@@ -72,3 +72,38 @@
   width: 200px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .portfolio .progress {
+    padding-top: calc(100vh - 100px);
+    font-size: 24px;
+  }
+  .portfolio .container .wrapper {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 !important;
+  }
+  .portfolio .container .wrapper .imageContainer {
+    width: 100% !important;
+    max-height: 250px;
+  }
+  .portfolio .container .wrapper .imageContainer img {
+    object-fit: contain;
+  }
+
+  .portfolio .textContainer {
+    transform: none !important;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .portfolio .container .textContainer h2 {
+    font-size: 2rem;
+  }
+
+  .portfolio .container .textContainer p {
+    font-size: 1rem;
+  }
+}

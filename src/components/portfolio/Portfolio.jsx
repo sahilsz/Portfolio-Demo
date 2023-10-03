@@ -6,7 +6,7 @@ const items = [
   {
     id: 1,
     title: "Next.js FullStack",
-    img: "https://images.pexels.com/photos/12142716/pexels-photo-12142716.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    img: "https://images.pexels.com/photos/18924410/pexels-photo-18924410/free-photo-of-a-church-on-a-rock-in-petrovac-montenegro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora at ratione, deleniti dolorem officiis quia quasi. Dolores doloremque natus impedit nostrum tempora, eos illum. Tempore cum omnis ipsum totam ullam.",
   },
   {
