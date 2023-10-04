@@ -12,7 +12,12 @@
 }
 
 .logo {
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.logo .dot {
+  color: rebeccapurple;
 }
 
 .social {
@@ -21,8 +26,13 @@
 }
 
 .social img {
-  width: 18px;
-  height: 18px;
+  width: 28px;
+  height: 28px;
+}
+
+.social img:hover {
+  transform: scale(1.5);
+  transition: all 0.5s;
 }
 
 @media only screen and (max-width: 768px) {
