@@ -32,8 +32,12 @@
   letter-spacing: 10px;
 }
 
-.hero .textContainer h1 {
-  font-size: 4rem;
+.hero .textContainer h3 {
+  font-size: 3rem;
+}
+
+.hero .buttons {
+  z-index: 999;
 }
 
 .buttons button {
@@ -45,6 +49,12 @@
   margin-right: 20px;
   cursor: pointer;
   font-weight: 400;
+}
+
+.hero .buttons button:hover {
+  background-color: rebeccapurple;
+  color: white;
+  transition: all 0.5s;
 }
 
 .slidingTextContainer {
@@ -59,8 +69,12 @@
 .hero .imageContainer {
   height: 100%;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 20%;
+  right: 10%;
+}
+
+.hero .imageContainer img {
+  width: 300px;
 }
 
 /* Mobile */
@@ -73,8 +87,8 @@
     text-align: center;
   }
 
-  .hero .textContainer h1 {
-    font-size: 2rem;
+  .hero .textContainer h3 {
+    font-size: 1.5rem;
   }
 
   .hero .imageContainer {

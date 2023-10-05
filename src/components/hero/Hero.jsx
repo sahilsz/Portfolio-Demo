@@ -48,14 +48,22 @@ export default function Hero() {
           animate="animate"
         >
           <motion.h2 variants={textVariants}>Sahil Sharma</motion.h2>
-          <motion.h1 variants={textVariants}>
-            Web Developer and Designer
-          </motion.h1>
+          <motion.h3 variants={textVariants}>
+            Building something cool, Software Developer and Designer
+          </motion.h3>
           <motion.div className="buttons" variants={textVariants}>
-            <motion.button variants={textVariants}>
-              See the Latest Works
-            </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <a
+              href="https://github.com/sahilsz"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.button variants={textVariants}>
+                See the Latest Works
+              </motion.button>
+            </a>
+            <a href="/Sahil_Resume.pdf" target="_blank">
+              <motion.button variants={textVariants}>Résumé </motion.button>
+            </a>
           </motion.div>
           <motion.img
             variants={textVariants}
@@ -73,7 +81,7 @@ export default function Hero() {
         Creating Exploring Developing Experimenting
       </motion.div>
       <div className="imageContainer">
-        <img src="/hero.png" alt="Hero" />
+        <img src="/js.png" alt="Hero" />
       </div>
     </div>
   );
