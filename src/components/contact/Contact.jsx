@@ -25,28 +25,32 @@ export default function Contact() {
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Let&apos;s work together</motion.h1>
+        <motion.h1 variants={variants}>Let&apos;s Connect</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>me@sahils.in</span>
+          <span>
+            <a href="mailto:sahilsz@proton.me">sahilsz@proton.me</a>
+          </span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Address</h2>
-          <span>India</span>
+          <h2>LinkedIn</h2>
+          <span>
+            <a href="https://linkedin.com/in/sahilsz">In/Sahilsz</a>
+          </span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
           <span>+91 100</span>
         </motion.div>
       </motion.div>
-      <motion.div className="formContainer" variants={variants}>
+      {/* <motion.div className="formContainer" variants={variants}>
         <form>
           <input type="text" required placeholder="Name" />
           <input type="email" required placeholder="Email" />
           <textarea rows={8} placeholder="Message" />
           <button>Submit</button>
         </form>
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   );
 }

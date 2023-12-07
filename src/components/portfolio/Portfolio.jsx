@@ -5,27 +5,31 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "Next.js FullStack",
-    img: "https://images.pexels.com/photos/18924410/pexels-photo-18924410/free-photo-of-a-church-on-a-rock-in-petrovac-montenegro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora at ratione, deleniti dolorem officiis quia quasi. Dolores doloremque natus impedit nostrum tempora, eos illum. Tempore cum omnis ipsum totam ullam.",
+    title: "Ai-Saas - Next.js FullStack",
+    img: "ai.png",
+    desc: "This is my attempt to implement a client interface for an Ai-ChatBot. I'm current working on this, this project utilized latest tech such as Next.js, TypeScript and more.",
+    demo: "ai-sas.vercel.app",
   },
   {
     id: 2,
-    title: "Mern Stack",
-    img: "https://images.pexels.com/photos/18622543/pexels-photo-18622543/free-photo-of-go-home.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora at ratione, deleniti dolorem officiis quia quasi. Dolores doloremque natus impedit nostrum tempora, eos illum. Tempore cum omnis ipsum totam ullam.",
+    title: "Mern Stack- Fiver Clone",
+    img: "/fiverr.png",
+    desc: "This is my implementation of fiver using React on client side, node on server side and mongodb for data storage. I have intergrated React with node.js with authentication using JWT. I have also added postman collection to test the endpoints.",
+    link: "https://github.com/sahilsz/Fiverr-Clone",
   },
   {
     id: 3,
-    title: "Next.js SAAS",
-    img: "https://images.pexels.com/photos/14491521/pexels-photo-14491521.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora at ratione, deleniti dolorem officiis quia quasi. Dolores doloremque natus impedit nostrum tempora, eos illum. Tempore cum omnis ipsum totam ullam.",
+    title: "RestFUL APIs - Node.js",
+    img: "/book.png",
+    desc: "A Node.js backend RESTful APIs for managing and storing individuals books. This is my submission project for one of my Hackthon. Here I created all the CRUD endpoints with proper authentication & authorization with 70% unittest coverage.",
+    link: "https://github.com/sahilsz/node-books-management",
   },
   {
     id: 4,
-    title: "Next.js Discord Clone",
+    title: "RestAPI with zod - Node.js, TypeScript",
     img: "https://images.pexels.com/photos/15086124/pexels-photo-15086124/free-photo-of-yellow-leaves-on-tree-in-autumn.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora at ratione, deleniti dolorem officiis quia quasi. Dolores doloremque natus impedit nostrum tempora, eos illum. Tempore cum omnis ipsum totam ullam.",
+    desc: "This is RestAPI with Node.js, Express, MongoDB, TypeScript and Zod with authentication using JWT and proper testing and logging using Pino.",
+    link: "https://github.com/sahilsz/Nodejs-RestAPI",
   },
 ];
 
@@ -49,7 +53,9 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <a href={item?.demo ? item.demo : item.link}>
+              <button>{item?.demo ? "See Demo" : "Visit"}</button>
+            </a>
           </motion.div>
         </div>
       </div>

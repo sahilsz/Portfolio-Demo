@@ -18,13 +18,13 @@ export default function Parallax({ type }) {
       ref={ref}
       style={{
         background:
-          type === "services"
+          type === "current"
             ? "linear-gradient(180deg, #111132, #0c0c1d)"
             : "linear-gradient(180deg, #111132, #505064",
       }}
     >
       <motion.h2 style={{ y: yText }}>
-        {type === "services" ? "What We Do?" : "What We Did?"}
+        {type === "current" ? "I'm Currently Working on !" : "My projects !!"}
       </motion.h2>
       <motion.div className="mountains"></motion.div>
       <motion.div
@@ -32,7 +32,7 @@ export default function Parallax({ type }) {
         style={{
           y: yBg,
           backgroundImage: `url(${
-            type === "services" ? "/planets.png" : "/sun.png"
+            type === "current" ? "/planets.png" : "/sun.png"
           })`,
         }}
       ></motion.div>
